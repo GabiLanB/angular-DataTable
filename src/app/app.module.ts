@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+import { AppComponent } from './app.component';
 import {MaterialExampleModule} from '../material.module';
 import {TableOverviewExample} from './table-overview-example';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -9,7 +10,9 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
-  declarations: [TableOverviewExample],
+  declarations: [
+    AppComponent,TableOverviewExample
+  ],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
@@ -20,6 +23,6 @@ import {HttpClientModule} from '@angular/common/http';
     ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [TableOverviewExample],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
